@@ -10,4 +10,9 @@ Only the custom file will be documented in here. To use YOLACT, please check its
 * result: the final result after you run eval.py in quantitative. Map and bbox information can be found here.
 
 ## File
-* 
+* `criterion_dis.py`: GAN losses for different structures.
+* `result_eval.py`: Output the AP curve, takes the content of 'yolact/results' as input.
+* `train.py`: original training routine
+* `train_gan.py`: GAN added training routine
+* `train_gan_server.py`: GAN added training routine applied to server
+* `output.py`: a simple script including training and evaluation. (Note that the path has to changed depending on what you need)
