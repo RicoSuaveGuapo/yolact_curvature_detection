@@ -12,9 +12,10 @@ if uid == 'rico-li':
     # pth_path = 'reserve_weight/300_images/yolact_base_42934_128802_interrupt.pth' # 300 labels result
     # pth_path = 'weights/yolact_base_1249_60000.pth'       # loss ratio (cls,box,mask)  1:1.5:6.125
     # pth_path = 'weights/yolact_base_2777_133333.pth'      # only U100/U150 loss ratio (cls,box,mask) 1:  3:6.125
-    pth_path = 'weights/yolact_base_454_30000.pth'          # with all kinds and loss ratio 1:  6:6.125
+    # pth_path = 'weights/yolact_base_454_30000.pth'          # with all kinds and loss ratio 1:  6:6.125
     # pth_path = 'weights/yolact_base_4761_114285.pth'      # with only A30 and loss ratio 1:  6:6.125
     # pth_path = 'weights/yolact_plus_base_1731_114285.pth' # all kinds yolact++ and 1:6:6.125
+    pth_path = 'yolact/weights/yolact_base_4761_114285.pth'
 
     # GAN YOLACT
     # pth_path = 'weights/yolact_base_31_30892_interrupt.pth'
@@ -50,7 +51,7 @@ elif uid == 'root':
 
 # ===== train =====
 # Local
-os.system('python -W ignore train.py --config=yolact_base_config --dataset metal2020_dataset --batch_size=4 --validation_epoch=16')
+# os.system('python -W ignore train.py --config=yolact_base_config --dataset metal2020_dataset --batch_size=4 --validation_epoch=16')
 
 # Server Dell
 # python -W ignore train.py --config=yolact_base_config --batch_size=24 --batch_alloc=24 --dataset metal2020_server_dataset --validation_epoch=16
